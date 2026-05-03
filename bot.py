@@ -116,10 +116,10 @@ def handle_tool_call(skills: dict, name: str, args: dict) -> str:
 
 
 def main():
-    endpoint = os.environ.get("ANTHROPIC_COMPATIBLE_ENDPOINT")
+    endpoint = os.environ.get("API_BASE_URL")
     api_key = os.environ.get("API_KEY")
     if not endpoint or not api_key or not MODEL:
-        print("Error: set ANTHROPIC_COMPATIBLE_ENDPOINT, API_KEY, and MODEL env vars.")
+        print("Error: set API_BASE_URL, API_KEY, and MODEL env vars.")
         sys.exit(1)
 
     client = OpenAI(base_url=endpoint, api_key=api_key)

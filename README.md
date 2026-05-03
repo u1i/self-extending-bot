@@ -42,7 +42,7 @@ First time: it figured out how to get weather data. Second time: it just used wh
 pip install openai
 
 # Set your API credentials
-export ANTHROPIC_COMPATIBLE_ENDPOINT="https://your-api-endpoint/v1"
+export API_BASE_URL="https://your-api-endpoint/v1"
 export API_KEY="your-api-key"
 export MODEL="your-model-name"
 
